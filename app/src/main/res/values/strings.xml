@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">aplikasi1</string>
+
+    <string-array name="kumpulanoperasihitung">
+        <item>Tambah</item>
+        <item>Kurang</item>
+        <item>Kali</item>
+        <item>Bagi</item>
+    </string-array>
+
+    <string-array name="konversiuang">
+        <item>Dollar</item>
+        <item>Peso</item>
+        <item>Ringgit</item>
+        <item>Euro</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

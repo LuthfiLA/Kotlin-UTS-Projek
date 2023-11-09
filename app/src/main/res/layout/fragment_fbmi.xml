@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingBottom="40dp"
+        android:background="@drawable/bmi_menu"
+        tools:context=".Fbmi">
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_bmi"
+            android:layout_marginBottom="10dp"/>
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#1D7874"
+                    android:layout_weight="1"
+                    android:padding="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weighText"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="BERAT"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/weightEdit"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="26sp"
+                        android:hint="KG"
+                        android:layout_marginEnd="6dp"
+                        android:textAlignment="center"
+                        android:textColorHint="#B4B4B4"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:background="#1D7874"
+                    android:padding="16dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/heightText"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="TINGGI"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:id="@+id/heightEdit"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="26sp"
+                        android:hint="CM"
+                        android:layout_marginStart="6dp"
+                        android:textAlignment="center"
+                        android:textColorHint="#B4B4B4"
+                        android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculateBtn"
+            android:layout_marginTop="20dp"
+            android:text="Calculate BMI"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_gravity="center"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultText"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="RESULT"
+    />
+
+</LinearLayout>

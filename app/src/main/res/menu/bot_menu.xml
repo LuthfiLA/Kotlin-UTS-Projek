@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botmenu_Home"
+        android:icon="@drawable/home_"
+        android:title="Home"/>
+
+    <item
+            android:id="@+id/botmenu_Calculator"
+            android:icon="@drawable/calculate"
+            android:title="Calculator"/>
+
+    <item
+            android:id="@+id/botmenu_BMI"
+            android:icon="@drawable/bmi"
+            android:title="BMI"/>
+
+    <item
+            android:id="@+id/botmenu_Money"
+            android:icon="@drawable/money"
+            android:title="Money"/>
+</menu>
